@@ -37,40 +37,6 @@ class SecondActivity : AppCompatActivity() {
         setResult(RESULT_OK, replyIntent)
         finish()
     }
-    override fun onStart() {
-        super.onStart()
-        Log.d("TAG", "STARTED2")
-        Toast.makeText(applicationContext, "STARTED2",Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d("TAG", "RESUMED2")
-        Toast.makeText(applicationContext, "RESUMED2",Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d("TAG", "PAUSED2")
-        Toast.makeText(applicationContext, "PAUSED2",Toast.LENGTH_SHORT).show()
-    }
-    override fun onStop() {
-        super.onStop()
-        Log.d("TAG", "STOPPED2")
-        Toast.makeText(applicationContext, "STOPPED2",Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.e("TAG", "DESTROYED2")
-        Toast.makeText(applicationContext, "DESTROYED2",Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        Log.e("TAG", "RESTARTED2")
-        Toast.makeText(applicationContext, "RESTARTED2",Toast.LENGTH_SHORT).show()
-    }
     companion object {
         val EXTRA_REPLY = "com.example.android.twoactivities.extra.REPLY"
     }
